@@ -5,7 +5,11 @@ const fetchDemo = async (ms = 3000) => {
     setTimeout(resolve, ms);
   });
 
-  return Math.random();
+  const isError = Math.random() > 0.5;
+
+  if (isError) throw new Error("Error");
+
+  return true;
 };
 
 export function useStatusButton() {

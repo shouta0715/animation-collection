@@ -28,6 +28,7 @@ export function StatusButton() {
         className="w-60"
         disabled={status === "pending"}
         onClick={() => mutate(3000)}
+        variant={status === "error" ? "destructive" : "default"}
       >
         <AnimatePresence initial={false} mode="popLayout">
           <motion.span
