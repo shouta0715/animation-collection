@@ -1,3 +1,9 @@
+import { StatusButton } from "@/app/_features/status-button/components";
+
 export default function Home() {
-  return <div>Hello, world!</div>;
+  return (
+    <div>
+      <StatusButton />
+    </div>
+  );
 }

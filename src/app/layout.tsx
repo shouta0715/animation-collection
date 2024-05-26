@@ -1,6 +1,7 @@
 import "@/styles/tailwind.css";
 import { Inter as FontSans } from "next/font/google";
 
+import { Provider } from "@/components/provider";
 import { cn } from "@/lib/utils";
 
 const fontSans = FontSans({
@@ -22,7 +23,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           fontSans.variable
         )}
       >
-        {children}
+        <Provider>{children}</Provider>
       </body>
     </html>
   );

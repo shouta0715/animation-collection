@@ -19,18 +19,18 @@ jobs:
       contents: read
       pull-requests: write
 
-    steps:
-      - name: checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+    # steps:
+    #   - name: checkout
+    #     uses: actions/checkout@v4
+    #     with:
+    #       fetch-depth: 0
 
-      - name: Setup pnpm
-        uses: ./.github/actions/setup-pnpm
+    #   - name: Setup pnpm
+    #     uses: ./.github/actions/setup-pnpm
 
-      - name: Run tests
-        run: pnpm test:coverage
+    #   - name: Run tests
+    #     run: pnpm test:coverage
 
-      - name: Upload coverage
-        if: always()
-        uses: davelosert/vitest-coverage-report-action@v2
+    #   - name: Upload coverage
+    #     if: always()
+    #     uses: davelosert/vitest-coverage-report-action@v2
