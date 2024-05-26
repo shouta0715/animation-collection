@@ -23,7 +23,11 @@ export default function RootLayout({ children }: RootLayoutProps) {
           fontSans.variable
         )}
       >
-        <Provider>{children}</Provider>
+        <Provider>
+          <div className="container mx-auto px-4 py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24">
+            {children}
+          </div>
+        </Provider>
       </body>
     </html>
   );
