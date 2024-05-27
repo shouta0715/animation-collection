@@ -1,4 +1,4 @@
-import { StatusButton } from "@/app/_features/status-button/components";
+import { StatusButton } from "@/components/status-button/components";
 
 export default function Home() {
   return (
