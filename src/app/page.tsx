@@ -1,9 +1,11 @@
-import { StatusButton } from "@/app/_features/status-button/components";
+import { Counter } from "@/features/counter/components";
+import { StatusButton } from "@/features/status-button/components";
 
 export default function Home() {
   return (
-    <div>
+    <div className="flex h-screen flex-col space-y-4">
       <StatusButton />
+      <Counter />
     </div>
   );
 }

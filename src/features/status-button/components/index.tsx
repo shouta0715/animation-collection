@@ -4,8 +4,8 @@ import { MutationStatus } from "@tanstack/react-query";
 import { AnimatePresence, motion } from "framer-motion";
 import { Check, Loader } from "lucide-react";
 import React from "react";
-import { useStatusButton } from "@/app/_features/status-button/hooks";
-import { Button } from "@/components/ui/button";
+import { useStatusButton } from "@/features/status-button/hooks";
+import { Button } from "@/features/ui/button";
 
 const buttonCopy: Record<MutationStatus, React.ReactNode> = {
   idle: "Click me!",
