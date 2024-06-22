@@ -2,6 +2,7 @@ import { Counter } from "@/features/counter/components";
 import { StatusButton } from "@/features/status-button/components";
 import { FullWindow } from "@/features/the-basics/full-window";
 import { ScaleUp } from "@/features/the-basics/scale-up";
+import { ShowSeconds } from "@/features/the-basics/sow-seconds";
 import { Tabs } from "@/features/the-basics/tabs";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
           <ScaleUp />
           <FullWindow />
           <Tabs />
+          <ShowSeconds />
         </div>
       </div>
     </div>
