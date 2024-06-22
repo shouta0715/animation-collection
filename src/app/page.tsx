@@ -1,11 +1,16 @@
-import { Counter } from "@/features/counter/components";
-import { StatusButton } from "@/features/status-button/components";
+import Link from "next/link";
+import { AppCards } from "@/features/the-basics/app-cards";
+import { buttonVariants } from "@/features/ui/button";
+import { cn } from "@/lib/utils";
 
 export default function Home() {
   return (
-    <div className="flex h-screen flex-col space-y-4">
-      <StatusButton />
-      <Counter />
+    <div>
+      <AppCards />
+
+      <Link className={cn(buttonVariants(), "mt-8")} href="/app-card">
+        AppCardへ
+      </Link>
     </div>
   );
 }

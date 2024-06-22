@@ -103,6 +103,7 @@
     "react-hooks/exhaustive-deps": "error",
     "no-continue": "off",
     "no-restricted-syntax": "off",
-    "max-classes-per-file": "off"
+    "max-classes-per-file": "off",
+    "react/no-array-index-key": "off"
   }
 }
