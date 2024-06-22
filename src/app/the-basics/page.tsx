@@ -1,5 +1,7 @@
 import React from "react";
+import { StatusButton } from "@/features/status-button/components";
 import { AppCards } from "@/features/the-basics/app-cards";
+import { CheckButton } from "@/features/the-basics/check-button";
 import { FullWindow } from "@/features/the-basics/full-window";
 import { ScaleUp } from "@/features/the-basics/scale-up";
 import { ShowSeconds } from "@/features/the-basics/sow-seconds";
@@ -15,6 +17,8 @@ export default function Page() {
         <FullWindow />
         <Tabs />
         <ShowSeconds />
+        <CheckButton />
+        <StatusButton />
       </div>
     </div>
   );

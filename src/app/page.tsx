@@ -8,8 +8,8 @@ export default function Home() {
     <div>
       <AppCards />
 
-      <Link className={cn(buttonVariants(), "mt-8")} href="/app-card">
-        AppCardへ
+      <Link className={cn(buttonVariants(), "mt-8")} href="/the-basics">
+        アニメーションの基本
       </Link>
     </div>
   );
