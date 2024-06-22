@@ -2,6 +2,7 @@ import { Counter } from "@/features/counter/components";
 import { StatusButton } from "@/features/status-button/components";
 import { FullWindow } from "@/features/the-basics/full-window";
 import { ScaleUp } from "@/features/the-basics/scale-up";
+import { Tabs } from "@/features/the-basics/tabs";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <div className="flex flex-wrap gap-10">
           <ScaleUp />
           <FullWindow />
+          <Tabs />
         </div>
       </div>
     </div>
