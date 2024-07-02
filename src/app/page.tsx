@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { MultiStep } from "@/features/multi-steps";
 import { AppCards } from "@/features/the-basics/app-cards";
 import { AppStore } from "@/features/the-basics/app-store";
 import { FeedBack } from "@/features/the-basics/feed-back";
@@ -14,6 +15,10 @@ export default function Home() {
       </div>
       <div className="mt-10">
         <FeedBack />
+      </div>
+
+      <div className="mt-10">
+        <MultiStep />
       </div>
 
       <Link className={cn(buttonVariants(), "mt-8")} href="/the-basics">
